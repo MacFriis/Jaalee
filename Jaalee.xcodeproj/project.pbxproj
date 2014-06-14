@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		DAF00D51194C316E003F5C33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF00D50194C316E003F5C33 /* main.m */; };
 		DAF00D54194C316E003F5C33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF00D53194C316E003F5C33 /* AppDelegate.m */; };
-		DAF00D57194C316E003F5C33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF00D56194C316E003F5C33 /* ViewController.m */; };
 		DAF00D5A194C316E003F5C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF00D58194C316E003F5C33 /* Main.storyboard */; };
 		DAF00D5C194C316E003F5C33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF00D5B194C316E003F5C33 /* Images.xcassets */; };
 		DAF00D68194C316E003F5C33 /* JaaleeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF00D67194C316E003F5C33 /* JaaleeTests.m */; };
+		DAF00D73194C31BB003F5C33 /* BeaconsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF00D72194C31BB003F5C33 /* BeaconsTableViewController.m */; };
+		DAF00D7C194C31E3003F5C33 /* libJaaleeBeaconSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF00D7B194C31E3003F5C33 /* libJaaleeBeaconSDK.a */; };
+		DAF00D81194C44C2003F5C33 /* BeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF00D80194C44C2003F5C33 /* BeaconViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +33,22 @@
 		DAF00D50194C316E003F5C33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAF00D52194C316E003F5C33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAF00D53194C316E003F5C33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DAF00D55194C316E003F5C33 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DAF00D56194C316E003F5C33 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DAF00D59194C316E003F5C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAF00D5B194C316E003F5C33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DAF00D61194C316E003F5C33 /* JaaleeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JaaleeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF00D66194C316E003F5C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAF00D67194C316E003F5C33 /* JaaleeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JaaleeTests.m; sourceTree = "<group>"; };
+		DAF00D71194C31BB003F5C33 /* BeaconsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BeaconsTableViewController.h; path = ../BeaconsTableViewController.h; sourceTree = "<group>"; };
+		DAF00D72194C31BB003F5C33 /* BeaconsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BeaconsTableViewController.m; path = ../BeaconsTableViewController.m; sourceTree = "<group>"; };
+		DAF00D75194C31E3003F5C33 /* JLEBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLEBeacon.h; sourceTree = "<group>"; };
+		DAF00D76194C31E3003F5C33 /* JLEBeaconConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLEBeaconConfigManager.h; sourceTree = "<group>"; };
+		DAF00D77194C31E3003F5C33 /* JLEBeaconDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLEBeaconDefinitions.h; sourceTree = "<group>"; };
+		DAF00D78194C31E3003F5C33 /* JLEBeaconDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLEBeaconDevice.h; sourceTree = "<group>"; };
+		DAF00D79194C31E3003F5C33 /* JLEBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLEBeaconManager.h; sourceTree = "<group>"; };
+		DAF00D7A194C31E3003F5C33 /* JLEBeaconRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLEBeaconRegion.h; sourceTree = "<group>"; };
+		DAF00D7B194C31E3003F5C33 /* libJaaleeBeaconSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJaaleeBeaconSDK.a; sourceTree = "<group>"; };
+		DAF00D7F194C44C2003F5C33 /* BeaconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconViewController.h; sourceTree = "<group>"; };
+		DAF00D80194C44C2003F5C33 /* BeaconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF00D7C194C31E3003F5C33 /* libJaaleeBeaconSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,11 +91,14 @@
 		DAF00D4D194C316E003F5C33 /* Jaalee */ = {
 			isa = PBXGroup;
 			children = (
+				DAF00D74194C31E3003F5C33 /* SDK */,
+				DAF00D71194C31BB003F5C33 /* BeaconsTableViewController.h */,
+				DAF00D72194C31BB003F5C33 /* BeaconsTableViewController.m */,
 				DAF00D52194C316E003F5C33 /* AppDelegate.h */,
 				DAF00D53194C316E003F5C33 /* AppDelegate.m */,
-				DAF00D55194C316E003F5C33 /* ViewController.h */,
-				DAF00D56194C316E003F5C33 /* ViewController.m */,
 				DAF00D58194C316E003F5C33 /* Main.storyboard */,
+				DAF00D7F194C44C2003F5C33 /* BeaconViewController.h */,
+				DAF00D80194C44C2003F5C33 /* BeaconViewController.m */,
 				DAF00D5B194C316E003F5C33 /* Images.xcassets */,
 				DAF00D4E194C316E003F5C33 /* Supporting Files */,
 			);
@@ -114,6 +129,20 @@
 				DAF00D66194C316E003F5C33 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAF00D74194C31E3003F5C33 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				DAF00D75194C31E3003F5C33 /* JLEBeacon.h */,
+				DAF00D76194C31E3003F5C33 /* JLEBeaconConfigManager.h */,
+				DAF00D77194C31E3003F5C33 /* JLEBeaconDefinitions.h */,
+				DAF00D78194C31E3003F5C33 /* JLEBeaconDevice.h */,
+				DAF00D79194C31E3003F5C33 /* JLEBeaconManager.h */,
+				DAF00D7A194C31E3003F5C33 /* JLEBeaconRegion.h */,
+				DAF00D7B194C31E3003F5C33 /* libJaaleeBeaconSDK.a */,
+			);
+			path = SDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +194,14 @@
 				TargetAttributes = {
 					DAF00D4A194C316E003F5C33 = {
 						CreatedOnToolsVersion = 6.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.HomeKit = {
+								enabled = 0;
+							};
+						};
 					};
 					DAF00D60194C316E003F5C33 = {
 						CreatedOnToolsVersion = 6.0;
@@ -215,7 +252,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAF00D57194C316E003F5C33 /* ViewController.m in Sources */,
+				DAF00D81194C44C2003F5C33 /* BeaconViewController.m in Sources */,
+				DAF00D73194C31BB003F5C33 /* BeaconsTableViewController.m in Sources */,
 				DAF00D54194C316E003F5C33 /* AppDelegate.m in Sources */,
 				DAF00D51194C316E003F5C33 /* main.m in Sources */,
 			);
@@ -333,7 +371,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Jaalee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Jaalee/SDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -344,7 +387,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Jaalee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Jaalee/SDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

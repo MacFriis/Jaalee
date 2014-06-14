@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BeaconsTableViewController.h
 //  Jaalee
 //
 //  Created by Per Friis on 14/06/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface BeaconsTableViewController : UITableViewController
 
 @end
-
