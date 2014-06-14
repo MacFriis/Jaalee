@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAF00D51194C316E003F5C33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF00D50194C316E003F5C33 /* main.m */; };
+		DAF00D54194C316E003F5C33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF00D53194C316E003F5C33 /* AppDelegate.m */; };
+		DAF00D57194C316E003F5C33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF00D56194C316E003F5C33 /* ViewController.m */; };
+		DAF00D5A194C316E003F5C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF00D58194C316E003F5C33 /* Main.storyboard */; };
+		DAF00D5C194C316E003F5C33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF00D5B194C316E003F5C33 /* Images.xcassets */; };
+		DAF00D68194C316E003F5C33 /* JaaleeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF00D67194C316E003F5C33 /* JaaleeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAF00D62194C316E003F5C33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAF00D43194C316E003F5C33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAF00D4A194C316E003F5C33;
+			remoteInfo = Jaalee;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAF00D4B194C316E003F5C33 /* Jaalee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jaalee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF00D4F194C316E003F5C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF00D50194C316E003F5C33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAF00D52194C316E003F5C33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAF00D53194C316E003F5C33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAF00D55194C316E003F5C33 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DAF00D56194C316E003F5C33 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DAF00D59194C316E003F5C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAF00D5B194C316E003F5C33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DAF00D61194C316E003F5C33 /* JaaleeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JaaleeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF00D66194C316E003F5C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF00D67194C316E003F5C33 /* JaaleeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JaaleeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAF00D48194C316E003F5C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF00D5E194C316E003F5C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAF00D42194C316E003F5C33 = {
+			isa = PBXGroup;
+			children = (
+				DAF00D4D194C316E003F5C33 /* Jaalee */,
+				DAF00D64194C316E003F5C33 /* JaaleeTests */,
+				DAF00D4C194C316E003F5C33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAF00D4C194C316E003F5C33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAF00D4B194C316E003F5C33 /* Jaalee.app */,
+				DAF00D61194C316E003F5C33 /* JaaleeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAF00D4D194C316E003F5C33 /* Jaalee */ = {
+			isa = PBXGroup;
+			children = (
+				DAF00D52194C316E003F5C33 /* AppDelegate.h */,
+				DAF00D53194C316E003F5C33 /* AppDelegate.m */,
+				DAF00D55194C316E003F5C33 /* ViewController.h */,
+				DAF00D56194C316E003F5C33 /* ViewController.m */,
+				DAF00D58194C316E003F5C33 /* Main.storyboard */,
+				DAF00D5B194C316E003F5C33 /* Images.xcassets */,
+				DAF00D4E194C316E003F5C33 /* Supporting Files */,
+			);
+			path = Jaalee;
+			sourceTree = "<group>";
+		};
+		DAF00D4E194C316E003F5C33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAF00D4F194C316E003F5C33 /* Info.plist */,
+				DAF00D50194C316E003F5C33 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAF00D64194C316E003F5C33 /* JaaleeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAF00D67194C316E003F5C33 /* JaaleeTests.m */,
+				DAF00D65194C316E003F5C33 /* Supporting Files */,
+			);
+			path = JaaleeTests;
+			sourceTree = "<group>";
+		};
+		DAF00D65194C316E003F5C33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAF00D66194C316E003F5C33 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAF00D4A194C316E003F5C33 /* Jaalee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF00D6B194C316E003F5C33 /* Build configuration list for PBXNativeTarget "Jaalee" */;
+			buildPhases = (
+				DAF00D47194C316E003F5C33 /* Sources */,
+				DAF00D48194C316E003F5C33 /* Frameworks */,
+				DAF00D49194C316E003F5C33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jaalee;
+			productName = Jaalee;
+			productReference = DAF00D4B194C316E003F5C33 /* Jaalee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAF00D60194C316E003F5C33 /* JaaleeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF00D6E194C316E003F5C33 /* Build configuration list for PBXNativeTarget "JaaleeTests" */;
+			buildPhases = (
+				DAF00D5D194C316E003F5C33 /* Sources */,
+				DAF00D5E194C316E003F5C33 /* Frameworks */,
+				DAF00D5F194C316E003F5C33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAF00D63194C316E003F5C33 /* PBXTargetDependency */,
+			);
+			name = JaaleeTests;
+			productName = JaaleeTests;
+			productReference = DAF00D61194C316E003F5C33 /* JaaleeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAF00D43194C316E003F5C33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Mobility Dream Team";
+				TargetAttributes = {
+					DAF00D4A194C316E003F5C33 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					DAF00D60194C316E003F5C33 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = DAF00D4A194C316E003F5C33;
+					};
+				};
+			};
+			buildConfigurationList = DAF00D46194C316E003F5C33 /* Build configuration list for PBXProject "Jaalee" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAF00D42194C316E003F5C33;
+			productRefGroup = DAF00D4C194C316E003F5C33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAF00D4A194C316E003F5C33 /* Jaalee */,
+				DAF00D60194C316E003F5C33 /* JaaleeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAF00D49194C316E003F5C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF00D5A194C316E003F5C33 /* Main.storyboard in Resources */,
+				DAF00D5C194C316E003F5C33 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF00D5F194C316E003F5C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAF00D47194C316E003F5C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF00D57194C316E003F5C33 /* ViewController.m in Sources */,
+				DAF00D54194C316E003F5C33 /* AppDelegate.m in Sources */,
+				DAF00D51194C316E003F5C33 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF00D5D194C316E003F5C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF00D68194C316E003F5C33 /* JaaleeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAF00D63194C316E003F5C33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAF00D4A194C316E003F5C33 /* Jaalee */;
+			targetProxy = DAF00D62194C316E003F5C33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAF00D58194C316E003F5C33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAF00D59194C316E003F5C33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAF00D69194C316E003F5C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAF00D6A194C316E003F5C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAF00D6C194C316E003F5C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Jaalee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAF00D6D194C316E003F5C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Jaalee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DAF00D6F194C316E003F5C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Jaalee.app/Jaalee";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JaaleeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		DAF00D70194C316E003F5C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Jaalee.app/Jaalee";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JaaleeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAF00D46194C316E003F5C33 /* Build configuration list for PBXProject "Jaalee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF00D69194C316E003F5C33 /* Debug */,
+				DAF00D6A194C316E003F5C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF00D6B194C316E003F5C33 /* Build configuration list for PBXNativeTarget "Jaalee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF00D6C194C316E003F5C33 /* Debug */,
+				DAF00D6D194C316E003F5C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAF00D6E194C316E003F5C33 /* Build configuration list for PBXNativeTarget "JaaleeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF00D6F194C316E003F5C33 /* Debug */,
+				DAF00D70194C316E003F5C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAF00D43194C316E003F5C33 /* Project object */;
+}
