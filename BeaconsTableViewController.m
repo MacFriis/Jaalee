@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Mobility Dream Team. All rights reserved.
 //
 
-@import CoreBluetooth;
+@import CoreBluetooth; 
 #import "JLEBeaconConfigManager.h"
 #import "JLEBeaconManager.h"
 
@@ -47,12 +47,7 @@
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(disconnectBeacons:)];
     self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
 }
 
@@ -61,6 +56,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 #pragma mark - Table view data source
 
@@ -88,6 +84,9 @@
     if (beaconDevice.isConnected) {
         cell.backgroundColor = [UIColor lightGrayColor];
         cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        cell.backgroundColor = [UIColor whiteColor];
     }
     
     // Configure the cell...
@@ -98,7 +97,11 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     JLEBeaconDevice *bd = [self.beacons objectAtIndex:indexPath.row];
-    [bd callJaaleeBeacon];
+    if (bd.isConnected) {
+        [bd callJaaleeBeacon];
+    } else {
+        [bd connectToBeacon];
+    }
 }
 
 
@@ -155,7 +158,7 @@
 #pragma mark - Jaalee beaconManagerDelegate
 -(void)beaconConfigManager:(JLEBeaconConfigManager *)manager didDiscoverBeacon:(JLEBeaconDevice *)beacon RSSI:(NSNumber *)RSSI{
     
-    if ([self.beacons indexOfObject:beacon] == NSNotFound) {
+    if ([self.beacons indexOfObject:beacon] == NSNotFound && [beacon.name isEqualToString:@"jaalee"]) {
         beacon.delegate = self;
         [beacon connectToBeacon];
         NSLog(@"%s %@",__PRETTY_FUNCTION__,beacon);
@@ -166,7 +169,23 @@
 
 -(void)beaconConnectionDidSucceeded:(JLEBeaconDevice *)beacon{
     [self.tableView reloadData];
-    
+}
+
+-(void)beaconConnectionDidFail:(JLEBeaconDevice *)beacon withError:(NSError *)error{
+    NSLog(@"%s %@",__PRETTY_FUNCTION__,error.localizedDescription);
+}
+
+-(void)beaconDidDisconnect:(JLEBeaconDevice *)beacon withError:(NSError *)error{
+    [self.tableView reloadData];
+}
+
+-(IBAction)disconnectBeacons:(id)sender{
+    for (JLEBeaconDevice *bd in self.beacons) {
+        if (bd.isConnected) {
+            bd.delegate = self;
+            [bd disconnectBeacon];
+        }
+    }
 }
 
 @end

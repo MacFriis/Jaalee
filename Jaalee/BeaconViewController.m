@@ -22,8 +22,22 @@
     _beaconDevice = beaconDevice;
     
     self.title = _beaconDevice.name;
-    self.label1.text = _beaconDevice.proximityUUID;
-    self.label2.text = _beaconDevice.batteryLevel.description;
+    [_beaconDevice readBeaconBatteryWithCompletion:^(unsigned short value, NSError *error) {
+        NSLog(@"%s %@",__PRETTY_FUNCTION__,error.localizedDescription);
+        self.label1.text = [NSString stringWithFormat:@"Battery:%d",value];
+    }];
+    
+    [_beaconDevice readBeaconMajorWithCompletion:^(unsigned short value, NSError *error) {
+        self.label2.text = [NSString stringWithFormat:@"Major:%d",value];
+    }];
+    
+    [_beaconDevice readBeaconMeasuredPowerWithCompletion:^(unsigned short value, NSError *error) {
+        self.label3.text = [NSString stringWithFormat:@"Power:%d",value];
+    }];
+    
+    [beaconDevice readBeaconProximityUUIDWithCompletion:^(NSString *value, NSError *error) {
+        self.label4.text = value;
+    }];
 }
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -39,6 +53,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(writePower:)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,5 +73,17 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(IBAction)writePower:(id)sender{
+    [self.beaconDevice writeBeaconMesauredPower:181 withPassword:@"E00E00" Completion:^(BOOL value, NSError *error) {
+        if (value) {
+            NSLog(@"good -%s",__PRETTY_FUNCTION__);
+        } else {
+            NSLog(@"Arrraggggge %s",__PRETTY_FUNCTION__);
+        }
+        NSLog(@"%s %@",__PRETTY_FUNCTION__,error.localizedDescription);
+
+    }];
+}
 
 @end
